@@ -7,6 +7,8 @@ export enum SpeciesFormKey {
   MEGA_CURLY = "mega-curly",
   MEGA_DROOPY = "mega-droopy",
   MEGA_STRETCHY = "mega-stretchy",
+  DELTA = "delta",
+  ARMORED = "armored",
   PRIMAL = "primal",
   ORIGIN = "origin",
   INCARNATE = "incarnate",
