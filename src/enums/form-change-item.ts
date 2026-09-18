@@ -51,6 +51,7 @@ export enum FormChangeItem {
   SWAMPERTITE,
   TYRANITARITE,
   VENUSAURITE,
+  DELTA_VENUSAURITE,
 
   CLEFABLITE,
   VICTREEBELITE,
@@ -118,6 +119,8 @@ export enum FormChangeItem {
   ICY_REINS_OF_UNITY,
   SHADOW_REINS_OF_UNITY,
   ULTRANECROZIUM_Z,
+  ARMOR_SUIT,
+  CRYSTAL_PIECE,
 
   // #endregion Rare Form Change Items
 

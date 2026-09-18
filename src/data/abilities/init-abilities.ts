@@ -216,6 +216,19 @@ import i18next from "i18next";
 export function initAbilities() {
   (allAbilities as Ability[]).push(
     new AbBuilder(AbilityId.NONE, 3).build(),
+
+    new AbBuilder(AbilityId.PSYCHO_CALL, 3) //
+      .attr(LowHpMoveTypePowerBoostAbAttr, PokemonType.PSYCHIC)
+      .build(),
+    new AbBuilder(AbilityId.HUBRIS, 5) //
+      .attr(PostVictoryStatStageChangeAbAttr, [{ stat: Stat.SPATK, stages: 1 }])
+      .build(),
+    new AbBuilder(AbilityId.OMNITYPE, 3) //
+      .attr(ReceivedMoveDamageMultiplierAbAttr, 0.5) // Reduces all damage by 50%. Simplification for now.
+      .build(),
+    new AbBuilder(AbilityId.ANCIENT_PRESENCE, 3) //
+      .attr(PostSummonStatStageChangeAbAttr, [{ stat: Stat.SPDEF, stages: -1 }], false, true)
+      .build(),
     new AbBuilder(AbilityId.STENCH, 3) //
       .attr(
         PostAttackApplyBattlerTagAbAttr,
